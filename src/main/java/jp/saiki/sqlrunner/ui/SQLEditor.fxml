@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="742.0" xmlns:fx="http://javafx.com/fxml" fx:controller="jp.saiki.sqlrunner.ui.SQLEditor">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" prefHeight="16.0" prefWidth="69.0" />
+    <SplitPane id="splitPaneVertical1" dividerPositions="0.5" focusTraversable="true" orientation="VERTICAL" prefHeight="592.0" prefWidth="742.0">
+      <items>
+        <AnchorPane id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <MenuBar id="menuBar1" prefWidth="740.0">
+              <menus>
+                <Menu id="fileMenu1" onAction="#handleRunAction" text="Run" />
+              </menus>
+            </MenuBar>
+            <TextArea id="textArea1" layoutY="24.0" prefHeight="268.0" prefWidth="740.0" fx:id="textArea" />
+          </children>
+        </AnchorPane>
+        <AnchorPane id="anchorPane2" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TableView id="tableView1" layoutY="24.0" prefHeight="268.0" prefWidth="740.0" fx:id="result" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="742.0" xmlns:fx="http://javafx.com/fxml" fx:controller="jp.saiki.sqlrunner.ui.MainView">
+  <children>
+    <MenuBar id="menuBar1" prefWidth="742.0" fx:id="menus" >
+      <menus>
+        <Menu id="fileMenu1" text="File">
+          <items>
+            <MenuItem id="menuItem1" text="New Tab" onAction="#handleNewTabAction" />
+            <MenuItem id="close1" text="Close" onAction="#handleCloseAction" />
+          </items>
+        </Menu>
+        <Menu id="helpMenu1" text="Help">
+          <items>
+            <MenuItem id="about1" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TabPane id="tabPane1" layoutY="24.0" prefHeight="568.0" prefWidth="742.0" tabClosingPolicy="UNAVAILABLE" fx:id="tabs" />
+  </children>
+</AnchorPane>
